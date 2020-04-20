@@ -1,7 +1,7 @@
 package com.dingj.code.algorithm.tree;
 
 /**
- * 面试题36. 二叉搜索树与双向链表
+ * 面试题36. 二叉搜索树转循环双向链表
  */
 public class BSTToDoublyList {
 
