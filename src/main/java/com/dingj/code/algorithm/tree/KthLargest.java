@@ -8,15 +8,6 @@ import java.util.Stack;
  * 面试题54，二叉搜索树的第k大节点
  */
 public class KthLargest {
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     int count = 1;
     int result = -1;
