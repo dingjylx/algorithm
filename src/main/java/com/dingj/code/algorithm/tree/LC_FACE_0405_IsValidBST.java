@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 面试题 04.05. 合法二叉搜索树
  */
-public class IsValidBST {
+public class LC_FACE_0405_IsValidBST {
 
 
     /**

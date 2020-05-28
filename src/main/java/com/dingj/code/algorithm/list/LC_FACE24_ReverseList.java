@@ -3,7 +3,7 @@ package com.dingj.code.algorithm.list;
 /**
  * 面试题24. 反转链表
  */
-public class ReverseList {
+public class LC_FACE24_ReverseList {
 
     public class ListNode {
         int val;

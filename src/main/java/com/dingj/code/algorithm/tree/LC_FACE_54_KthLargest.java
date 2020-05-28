@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * 面试题54，二叉搜索树的第k大节点
  */
-public class KthLargest {
+public class LC_FACE_54_KthLargest {
 
     int count = 1;
     int result = -1;
@@ -80,7 +80,7 @@ public class KthLargest {
         left2.left = left1;
         root.right = right2;
         right2.left = right1;
-        KthLargest kth = new KthLargest();
+        LC_FACE_54_KthLargest kth = new LC_FACE_54_KthLargest();
         // 递归
         System.out.println(kth.kthLargest(root, 2));
         // 栈迭代

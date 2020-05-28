@@ -4,7 +4,7 @@ package com.dingj.code.algorithm.array;
 /**
  * 55. 跳跃游戏
  */
-public class CanJump {
+public class LC_55_CanJump {
 
     /**
      * 正序贪心：
