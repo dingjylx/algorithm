@@ -50,7 +50,7 @@ public class LC_47_PermuteUnique {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3,3,0,3};
+        int[] nums = {3, 3, 0, 3};
         LC_47_PermuteUnique permuteUnique = new LC_47_PermuteUnique();
         System.out.println(permuteUnique.permuteUnique(nums));
     }

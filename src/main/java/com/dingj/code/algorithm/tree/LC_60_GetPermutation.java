@@ -9,10 +9,14 @@ package com.dingj.code.algorithm.tree;
 public class LC_60_GetPermutation {
 
 
-    public String getPernutation(int n, int k){
+    public String getPernutation(int n, int k) {
+
+        return "";
 
     }
 
 
-    private void backtrack(int n, int k,)
+    private void backtrack(int n, int k) {
+
+    }
 }

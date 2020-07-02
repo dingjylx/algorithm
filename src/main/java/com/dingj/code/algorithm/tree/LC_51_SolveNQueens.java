@@ -94,7 +94,7 @@ public class LC_51_SolveNQueens {
     }
 
     public static void main(String[] args) {
-        for(int i=3,j=3;i>=0 && j>=0;i--,j--){
+        for (int i = 3, j = 3; i >= 0 && j >= 0; i--, j--) {
             System.out.println(i + "-" + j);
         }
     }

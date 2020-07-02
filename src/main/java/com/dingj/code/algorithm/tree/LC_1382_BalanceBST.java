@@ -13,21 +13,21 @@ public class LC_1382_BalanceBST {
 
     public TreeNode balanceBST(TreeNode root) {
         List<Integer> sortList = new ArrayList<>();
-        getList(root,sortList);
-        return buildTree(sortList,0, sortList.size() - 1);
+        getList(root, sortList);
+        return buildTree(sortList, 0, sortList.size() - 1);
     }
 
 
     // 有序链表构造平衡二叉树
     private TreeNode buildTree(List<Integer> sortList, int start, int end) {
-        if (start > end){
+        if (start > end) {
             return null;
         }
         int mid = start + (end - start >> 1);
         TreeNode root = new TreeNode(sortList.get(mid));
         // 递归构造左右子树
-        root.left = buildTree(sortList,start,mid-1);
-        root.right = buildTree(sortList,mid+1,end);
+        root.left = buildTree(sortList, start, mid - 1);
+        root.right = buildTree(sortList, mid + 1, end);
         return root;
     }
 

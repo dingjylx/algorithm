@@ -10,13 +10,14 @@ public class LC_FACE_36_BSTToDoublyList {
         public Node left;
         public Node right;
 
-        public Node() {}
+        public Node() {
+        }
 
         public Node(int _val) {
             val = _val;
         }
 
-        public Node(int _val,Node _left,Node _right) {
+        public Node(int _val, Node _left, Node _right) {
             val = _val;
             left = _left;
             right = _right;
@@ -27,7 +28,7 @@ public class LC_FACE_36_BSTToDoublyList {
     private Node head;
 
     public Node treeToDoublyList(Node root) {
-        if(root == null){
+        if (root == null) {
             return null;
         }
         // 中序遍历访问节点并连接
@@ -40,17 +41,18 @@ public class LC_FACE_36_BSTToDoublyList {
 
     /**
      * 中序递归
+     *
      * @param cur
      */
-    void inOrder(Node cur){
+    void inOrder(Node cur) {
         // 递归出口
-        if(cur == null){
+        if (cur == null) {
             return;
         }
         // 访问左子树
         inOrder(cur.left);
         // 将当前节点和上一节点连接
-        if(pre == null){
+        if (pre == null) {
             head = cur;
         } else {
             pre.right = cur;

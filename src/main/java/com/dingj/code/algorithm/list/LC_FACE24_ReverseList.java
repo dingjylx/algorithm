@@ -16,6 +16,7 @@ public class LC_FACE24_ReverseList {
 
     /**
      * 双指针迭代
+     *
      * @param head
      * @return
      */
@@ -24,7 +25,7 @@ public class LC_FACE24_ReverseList {
         ListNode pre = null;
         ListNode cur = null;
         ListNode temp = null;
-        while (cur != null){
+        while (cur != null) {
             //记录当前节点的下一个节点
             temp = cur.next;
             //然后将当前节点指向pre
@@ -38,12 +39,13 @@ public class LC_FACE24_ReverseList {
 
     /**
      * 递归
+     *
      * @param head
      * @return
      */
     public ListNode reverseList2(ListNode head) {
         //递归终止条件是当前为空，或者下一个节点为空
-        if(head==null || head.next==null) {
+        if (head == null || head.next == null) {
             return head;
         }
         //这里的cur就是最后一个节点

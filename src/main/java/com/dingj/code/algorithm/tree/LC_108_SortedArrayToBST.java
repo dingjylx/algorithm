@@ -21,14 +21,14 @@ public class LC_108_SortedArrayToBST {
     }
 
     // 中序遍历：选择任意一个中间位置元素作为根节点
-    private TreeNode helper(int left ,int right){
-        if(left > right) return null;
+    private TreeNode helper(int left, int right) {
+        if (left > right) return null;
         // 取中间数
         int mid = (left + right) / 2;
-        if((left + right) %2 == 1)
+        if ((left + right) % 2 == 1)
             mid += rand.nextInt(2);
         TreeNode root = new TreeNode(nums[mid]);
-        root.left = helper(left, mid-1);
+        root.left = helper(left, mid - 1);
         root.right = helper(mid + 1, right);
         return root;
     }

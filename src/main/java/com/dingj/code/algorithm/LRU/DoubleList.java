@@ -6,16 +6,17 @@ package com.dingj.code.algorithm.LRU;
 public class DoubleList {
     private Node head, tail; // 头尾虚节点
     private int size; //链表元素数
-    public DoubleList(){
-        head = new Node(0,0);
-        tail = new Node(0,0);
+
+    public DoubleList() {
+        head = new Node(0, 0);
+        tail = new Node(0, 0);
         head.next = tail;
         tail.prev = head;
         size = 0;
     }
 
     // 向链表头部添加节点x
-    public void addFirst(Node x){
+    public void addFirst(Node x) {
         x.next = head.next;
         x.prev = head;
         head.next.prev = x;
@@ -24,15 +25,15 @@ public class DoubleList {
     }
 
     // 删除链表中的 x 节点（x 一定存在）
-    public void remove(Node x){
+    public void remove(Node x) {
         x.prev.next = x.next;
         x.next.prev = x.prev;
         size--;
     }
 
     // 删除链表中最后一个节点，并返回该节点
-    public Node removeLast(){
-        if(tail.prev == head){
+    public Node removeLast() {
+        if (tail.prev == head) {
             return null;
         }
         Node last = tail.prev;
@@ -41,5 +42,7 @@ public class DoubleList {
     }
 
     // 返回链表长度
-    public int size() { return size; }
+    public int size() {
+        return size;
+    }
 }
