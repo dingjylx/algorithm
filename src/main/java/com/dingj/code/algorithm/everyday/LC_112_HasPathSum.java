@@ -15,11 +15,13 @@ public class LC_112_HasPathSum {
         }
 
         // 达到叶子节点时，递归终止，判断sum是否符合条件
+        // 同时判断节点的左右子树同时为空才是叶子节点。
         if (root.left == null && root.right == null) {
             return root.val == sum;
         }
 
         // 递归地判断root节点的左孩子和右孩子。
+        // 只要左右任意一个孩子的为空时 sum == 0 就返回 True
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
 
     }
