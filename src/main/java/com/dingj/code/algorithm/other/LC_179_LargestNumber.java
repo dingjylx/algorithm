@@ -40,7 +40,7 @@ public class LC_179_LargestNumber {
 
     public static void main(String[] args) {
         LC_179_LargestNumber lc_179_largestNumber = new LC_179_LargestNumber();
-        System.out.println(lc_179_largestNumber.largestNumber(new int[]{123,76,7,9}));
+        System.out.println(lc_179_largestNumber.largestNumber(new int[]{123, 76, 7, 9}));
     }
 
 

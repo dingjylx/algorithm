@@ -90,8 +90,8 @@ public class LC_378_KthSmallest {
         int i = 1;
         int k = 1;
         int cnt = 0;
-        while (k <5){
-            cnt += i +1;
+        while (k < 5) {
+            cnt += i + 1;
             k++;
         }
 
