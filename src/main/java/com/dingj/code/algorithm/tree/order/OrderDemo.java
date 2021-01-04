@@ -165,10 +165,10 @@ public class OrderDemo {
         node1.right = node4;
         node2.left = node5;
         node2.right = node6;
-//        levelOrder(root);
+        levelOrder(root);
 //        preOrder2(root);
 //        inOrder2(root);
-        postOrder2(root);
+//        postOrder2(root);
     }
 
 

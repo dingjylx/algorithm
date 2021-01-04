@@ -21,7 +21,7 @@ public class LC_216_CombinationSum3 {
 
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> res = new ArrayList<>();
-        dfs(res, new ArrayList<>(), k, 1, n);
+        dfs(res, new ArrayList<Integer>(), k, 1, n);
         return res;
     }
 
