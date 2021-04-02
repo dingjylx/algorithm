@@ -26,7 +26,7 @@ public class SelectionSort {
 
         //下标i循环到倒数第二个元素就停止了，是因为，当待排序区间只剩下一个元素的时候，它就是最后一个元素，无需再次比较；
         for (int i = 0; i < len - 1; i++) {
-            int minIndex = i;// 带确定最小值的位置
+            int minIndex = i;// 待确定最小值的位置
 
             // 选最小的记录
             for (int j = i + 1; j < len; j++) {

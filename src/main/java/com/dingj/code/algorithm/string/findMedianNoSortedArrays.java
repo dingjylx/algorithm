@@ -1,4 +1,4 @@
-package com.dingj.code.algorithm.array;
+package com.dingj.code.algorithm.string;
 
 import java.util.PriorityQueue;
 
